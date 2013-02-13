@@ -1,0 +1,78 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url-prefix("https://<my-jira-server>/jira/secure/RapidBoard.jspa?") {
+  body, #ghx-chart-content{
+		overflow: hidden;
+	}
+
+	html, body, #ghx-chart-content{
+		background-color: #000 !important;
+	}
+
+	#ghx-chart-content{
+		border: 0 !important;
+	}
+
+	#ghx-view-selector{
+		width: 200px !important;
+		float: left !important;
+		border: 0px solid red;
+		position: absolute;
+		top: 0px;
+		left: 40px;
+		z-index: 98;
+	}
+
+	#ghx-chart-controls-group{
+		width: 200px !important;
+		border: 0px solid blue;
+		position: absolute;
+		top: -100px;
+		left: 88px;
+		z-index: 999;
+		background: #000;
+	}
+
+	#ghx-chart-content{
+		z-index: 7 !important;
+		top: 0 !important;
+		padding-top: 80px !important;
+		height: 800px !important;
+	}
+
+	content{
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	#ghx-chart-empty{
+		clear: both;
+	}
+
+	header, #ghx-chart-data, #ghx-chart-header, #ghx-modes-tools, .ghx-feedback{
+		display: none !important;
+	}
+
+	.ghx-axis, .tickLabel{
+		color: #999 !important;
+	}
+
+	.ghx-nav-items{
+		color: #999 !important;
+		font-size: 40px !important;
+		height: 100px !important;
+		width: 600px !important;
+	margin: 20px 0 0 0 !important;
+	}
+	#ghx-board-name{
+		color: #333  !important;
+		font-size: 40px !important;
+	}
+
+	.ghx-sprint-support #ghx-header h1:before{
+		background-position: left 10px  !important;
+	}
+
+	footer{
+		visibility: hidden;
+	}
+}
